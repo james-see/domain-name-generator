@@ -1,17 +1,15 @@
 """Uses brand new features of Python 3"""
 import argparse
 import threading
-import psutil
 from concurrent.futures import ThreadPoolExecutor
 import os
 import socket
 import sys
 import time
-from getmac import get_mac_address
 try:
     from __version__ import __version__
 except ModuleNotFoundError:
-    from findpi.__version__ import __version__
+    from domain_name_enerator.__version__ import __version__
 
 
 def getInput(currentip, thread_count):
@@ -109,13 +107,15 @@ def checkMacs(ip_address):
 
 
 logo = """
-  ______ _____ _   _ _____  _____ _____
- |  ____|_   _| \ | |  __ \|  __ \_   _|
- | |__    | | |  \| | |  | | |__) || |
- |  __|   | | | . ` | |  | |  ___/ | |
- | |     _| |_| |\  | |__| | |    _| |_
- |_|    |_____|_| \_|_____/|_|   |_____|
-
+       ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐               
+       │    o-o   o   o  o-o     │        
+       |    |  \  |\  | o        |         
+       │    |   O | \ | |  -o    │        
+       |    |  /  |  \| o   |    |         
+       │    o-o   o   o  o-o     │        
+       |                         |         
+       │  Domain Name Generator  │              
+       └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┘        
 """
 
 
@@ -123,6 +123,7 @@ def main():
     """
     Main function that runs everything.
     """
+    exit()
     args = prep()
     checksudo()
     currentIP = getip()
