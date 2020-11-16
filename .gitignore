@@ -1,0 +1,7 @@
+Piplock
+__pycache__
+domain-name-generator/__pycache__
+.env
+dist/
+build/
+*.egg-info
